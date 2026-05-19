@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Contact & Réservation — Rider & River Vaucluse</title>
+<link rel="stylesheet" href="style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-logo"><img src="logo.jpeg" alt="" class="logo-img"/><span class="logo-text">Rider <span class="accent">&</span> River Vaucluse</span></div>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li><li><a href="kayak.html">Kayak</a></li>
+    <li><a href="trottinette.html">Trottinette</a></li><li><a href="contact.html" class="active nav-cta">Réserver</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-img" style="background-image:url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1400&q=85')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <div class="page-hero-tag"><i class="fas fa-calendar-check"></i> Réservations</div>
+    <h1>Contact &<br/>Réservation</h1>
+    <p>On a hâte de vous accueillir pour une aventure inoubliable en Provence !</p>
+  </div>
+</section>
+
+<section style="background:var(--ink)">
+  <div class="container">
+    <div class="contact-wrap">
+      <div class="contact-infos">
+        <div class="s-label reveal">Nous trouver</div>
+        <h2 class="reveal">Nous <span style="color:var(--teal)">contacter</span></h2>
+        <p class="reveal">Pour toute question ou réservation, n'hésitez pas à nous joindre par téléphone, email ou via le formulaire ci-contre.</p>
+        <div class="info-row reveal">
+          <div class="i-ico"><i class="fas fa-phone"></i></div>
+          <div><div class="i-lbl">Téléphone</div><div class="i-val"><a href="tel:+33612345678">+33 6 12 34 56 78</a></div><div class="i-sub">Lun – Dim · 8h – 19h</div></div>
+        </div>
+        <div class="info-row reveal">
+          <div class="i-ico"><i class="fas fa-envelope"></i></div>
+          <div><div class="i-lbl">Email</div><div class="i-val"><a href="mailto:contact@rider-river-vaucluse.fr">contact@rider-river-vaucluse.fr</a></div><div class="i-sub">Réponse sous 24h en saison</div></div>
+        </div>
+        <div class="info-row reveal">
+          <div class="i-ico"><i class="fas fa-map-marker-alt"></i></div>
+          <div><div class="i-lbl">Adresse</div><div class="i-val" style="font-size:.88rem;line-height:1.6">12 Chemin des Bords de Sorgue<br/>84800 L'Isle-sur-la-Sorgue</div></div>
+        </div>
+        <div class="info-row reveal">
+          <div class="i-ico"><i class="fas fa-clock"></i></div>
+          <div>
+            <div class="i-lbl">Horaires</div>
+            <table style="font-size:.83rem;border-collapse:collapse;margin-top:.3rem">
+              <tr><td style="color:var(--off);padding-right:1.2rem">Lun – Ven</td><td style="color:var(--dark);font-weight:500">9h00 – 18h30</td></tr>
+              <tr><td style="color:var(--off);padding-right:1.2rem">Sam – Dim</td><td style="color:var(--dark);font-weight:500">8h00 – 19h00</td></tr>
+              <tr><td style="color:var(--off);padding-right:1.2rem">Fériés</td><td style="color:var(--dark);font-weight:500">9h00 – 17h00</td></tr>
+              <tr><td style="color:var(--off);padding-right:1.2rem">Hors saison</td><td style="color:var(--off)">Sur réservation</td></tr>
+            </table>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="i-lbl" style="margin-bottom:.7rem">Suivez-nous</div>
+          <div class="soc-row">
+            <a href="#" class="soc-btn ig"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#" class="soc-btn fb"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#" class="soc-btn"><i class="fab fa-tiktok"></i> TikTok</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-box reveal">
+        <h2>Formulaire de <span style="color:var(--teal)">réservation</span></h2>
+        <div id="formOk" class="f-ok hidden"><i class="fas fa-check-circle"></i> Demande envoyée ! Nous vous répondrons sous 24h.</div>
+        <form id="contactForm">
+          <div class="f-row">
+            <div class="fg"><label class="f-lbl">Prénom *</label><input class="f-inp" type="text" placeholder="Jean" required/></div>
+            <div class="fg"><label class="f-lbl">Nom *</label><input class="f-inp" type="text" placeholder="Dupont" required/></div>
+          </div>
+          <div class="f-row">
+            <div class="fg"><label class="f-lbl">Email *</label><input class="f-inp" type="email" placeholder="jean@email.fr" required/></div>
+            <div class="fg"><label class="f-lbl">Téléphone</label><input class="f-inp" type="tel" placeholder="06 XX XX XX XX"/></div>
+          </div>
+          <div class="f-row">
+            <div class="fg">
+              <label class="f-lbl">Activité *</label>
+              <select class="f-inp" required>
+                <option value="">— Choisir —</option>
+                <option>Kayak – Balade Découverte (18€)</option>
+                <option>Kayak – Formule Après-Midi (28€)</option>
+                <option>Kayak – Expédition Sauvage (45€)</option>
+                <option>Trottinette – Ocres Roussillon (18€)</option>
+                <option>Trottinette – Formule Après-Midi (28€)</option>
+                <option>Trottinette – Luberon Extrême (45€)</option>
+                <option>Groupe / Événement</option>
+              </select>
+            </div>
+            <div class="fg"><label class="f-lbl">Nombre *</label><input class="f-inp" type="number" min="1" max="50" placeholder="2" required/></div>
+          </div>
+          <div class="f-row">
+            <div class="fg"><label class="f-lbl">Date *</label><input class="f-inp" type="date" required/></div>
+            <div class="fg"><label class="f-lbl">Créneau</label><select class="f-inp"><option>Matin (9h00)</option><option>Après-midi (13h30)</option><option>Journée</option></select></div>
+          </div>
+          <div class="fg"><label class="f-lbl">Message</label><textarea class="f-inp" placeholder="Débutants, enfants, anniversaire, groupe... dites-nous tout !" rows="4" style="resize:vertical"></textarea></div>
+          <button type="submit" class="btn-primary btn-sub"><i class="fas fa-paper-plane"></i> Envoyer ma demande</button>
+          <p class="f-note">* Champs obligatoires · Aucun paiement en ligne — confirmation par téléphone ou email</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="map-s">
+  <div class="container">
+    <div class="s-label reveal">Localisation</div>
+    <h2 class="s-title reveal">Où nous <span class="hl">trouver</span></h2>
+    <div class="map-wrap reveal" style="margin-top:2.5rem">
+      <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=5.02%2C43.85%2C5.10%2C43.93&layer=mapnik&marker=43.918%2C5.048" width="100%" height="420" style="border:0" allowfullscreen loading="lazy"></iframe>
+      <div class="map-pin"><i class="fas fa-map-marker-alt"></i><span><strong>Rider & River Vaucluse</strong><br/>12 Chemin des Bords de Sorgue<br/>84800 L'Isle-sur-la-Sorgue</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-s">
+  <div class="container">
+    <div class="s-label reveal">FAQ</div>
+    <h2 class="s-title reveal">Questions <span class="hl">fréquentes</span></h2>
+    <div class="faq-list reveal">
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span><i class="fas fa-swimmer fi"></i> Faut-il savoir nager pour le kayak ?</span><i class="fas fa-chevron-down fa"></i></div><div class="faq-a"><p>Non, ce n'est pas obligatoire. Chaque participant porte un gilet de sauvetage homologué tout au long de l'activité. Les non-nageurs sont encadrés de très près par nos guides expérimentés.</p></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span><i class="fas fa-child fi"></i> Y a-t-il un âge minimum ?</span><i class="fas fa-chevron-down fa"></i></div><div class="faq-a"><p>Pour le kayak, les enfants dès 8 ans peuvent participer à la balade découverte (en kayak biplace avec un adulte). Pour la trottinette, l'âge minimum est de 12 ans. Les mineurs doivent être accompagnés d'un parent ou tuteur.</p></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span><i class="fas fa-users fi"></i> Peut-on venir en groupe ?</span><i class="fas fa-chevron-down fa"></i></div><div class="faq-a"><p>Absolument ! Nous accueillons des groupes jusqu'à 30 personnes (séminaires, EVG, EVJF, associations, classes). Un tarif de groupe est appliqué dès 8 personnes (−10%). Contactez-nous pour un devis sur mesure.</p></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span><i class="fas fa-tshirt fi"></i> Que faut-il apporter ?</span><i class="fas fa-chevron-down fa"></i></div><div class="faq-a"><p>Pour le kayak : vêtements qu'on n'a pas peur de mouiller, chaussures fermées, crème solaire, eau. Pour la trottinette : vêtements confortables, chaussures fermées. Tout le reste est fourni.</p></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span><i class="fas fa-cloud-rain fi"></i> Que se passe-t-il en cas de mauvais temps ?</span><i class="fas fa-chevron-down fa"></i></div><div class="faq-a"><p>En cas de conditions météo dangereuses, nous annulons la sortie et proposons un report ou un remboursement intégral. Vous serez prévenus au minimum 2h avant votre départ.</p></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span><i class="fas fa-calendar-times fi"></i> Peut-on annuler une réservation ?</span><i class="fas fa-chevron-down fa"></i></div><div class="faq-a"><p>Oui ! L'annulation est gratuite jusqu'à 48h avant l'activité. Entre 48h et 24h, un avoir vous est proposé. En dessous de 24h, un défraiement de 50% peut s'appliquer sauf cas de force majeure.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="f-logo"><img src="logo.jpeg" alt="" class="logo-img-sm"/> Rider & River Vaucluse</div>
+      <div class="f-links"><a href="index.html">Accueil</a><a href="kayak.html">Kayak</a><a href="trottinette.html">Trottinette</a><a href="contact.html">Contact</a></div>
+      <div class="f-soc"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-tiktok"></i></a></div>
+    </div>
+    <p class="f-copy">© 2025 Rider & River Vaucluse — Tous droits réservés</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
